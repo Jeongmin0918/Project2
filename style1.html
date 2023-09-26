@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+        #top{
+            background-color: #04AA6D;
+            color: white;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 4px;
+            line-height: 5px;
+        }
+        .middle{
+            position: relative;
+            overflow: auto;
+        }
+        #menubar{
+            width: 200px;
+            margin-left: 0;
+            padding: 0;
+            float: left
+        }
+        #munulist{
+            margin: 0;
+            padding: 0;
+        }
+        .menuitem{
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 4px;
+        }
+        .menuitem:hover{
+            background-color: white;
+        }
+        .menuitem:first-child {
+            background-color:#04AA6D;
+            color: white;
+            font-weight:bold;
+        }
+        #main{
+            padding: 10px;
+            margin: 0 210px;
+        }
+        a{
+            color: black;
+            text-decoration: underline;
+        }
+        a:hover{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #sidebar{
+            background-color: #32a4e7;
+            color: white;
+            padding: 10px;
+            width: 180px;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+            border-radius: 4px;
+            margin: 6px;
+        }
+        #bottom{
+            border: 1px solid #d4d4d4;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+            border-radius: 4px;
+            margin: 4px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="top">
+        <h1>Welcome to 한정민's Homepage 22000789</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+    <div class="middle">
+        <div id="menubar">
+            <ul id="menulist">
+                <li class="menuitem" onclick="location.href='file:///c%3A/Users/yjy67/OneDrive/background/language/Project2_html/style1.html'">Stylesheet 1</li>
+                <li class="menuitem" onclick="location.href='file:///c%3A/Users/yjy67/OneDrive/background/language/Project2_html/style2.html'">Stylesheet 2</li>
+                <li class="menuitem" onclick="location.href='file:///c%3A/Users/yjy67/OneDrive/background/language/Project2_html/noStyle.html'">No Stylesheet</li>
+            </ul>
+        </div>
+        <div id="main">
+            <div>
+                <h1>Same Page Different Stylesheets</h1>
+                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.
+                    You can change the layout of this page by selecting different stylesheets in the menu,
+                    or by selecting one of the following links:<br>
+                    <a href="file:///c%3A/Users/yjy67/OneDrive/background/language/Project2_html/style1.html">Stylesheet1</a>
+                    , 
+                    <a href="file:///c%3A/Users/yjy67/OneDrive/background/language/Project2_html/style2.html">Stylesheet2</a>
+            </div>
+            <div>
+                <h2>No Styles</h2>
+                <p>This page uses DIV elements to group different sections of the HTML page.
+                    Click here to see how the page looks like with no stylesheet: <br>
+                    <a href="file:///c%3A/Users/yjy67/OneDrive/background/language/Project2_html/nostyle.html">No Stylesheet.</a>
+            </div>
+        </div>
+        <div id="sidebar">
+            <h3>Side-Bar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+             tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+    </div>
+    <div id="bottom">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+         magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+          nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+           consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    </div>
+</body>
+</html>

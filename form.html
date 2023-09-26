@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>/* Style the form container */
+        #form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+        }
+        
+        /* Style the heading */
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        
+        /* Style the list items */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        /* Style text inputs */
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        /* Style radio and checkbox labels */
+        label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        /* Style submit and reset buttons */
+        input[type="submit"], 
+        input[type="reset"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form-container">
+        <h1>자기소개!</h1>
+        <ul id="first">
+            <li>자신에 대해 알려주세요!!</li>
+            <input type="text" name="major" placeholder="Major"><br><br> 
+        </ul>
+        <ul id="second">
+            <li>성별</li>
+            <input type="radio" name="gender" value="1">남자
+            <input type="radio" name="gender" value="2">여자
+        </ul>
+        <ul id="thrid">
+            <li>사용가능한 언어</li>
+            <input type="checkbox" name="language" value="1">Korean
+            <input type="checkbox" name="language" value="2">English
+        </ul>
+        <ul id="fourth">
+            <li>기숙사</li>
+            <select name="dormitory">
+                <option>외부거주</option>
+                <option>토레이</option>
+                <option>카이퍼</option>
+                <option>장기려</option>
+                <option>카마이클</option>
+                <option>손양원</option>
+                <option>열송학사</option>
+                <option>창조</option>
+                <option>갈대상자</option>
+            </select>
+        </ul>
+        <ul id="fifth">
+            <li>생일</li>
+            <input type="date" name="today">
+        </ul>
+        <ul id="sixth">
+            <li>하고싶은말 부탁드립니다!</li>
+            <textarea cols="20" rows="10" placeholder="잘 부탁드립니다!!"></textarea>
+        </ul>    
+
+        <input type="reset">
+        <input type="submit" value="제출">
+    </form>
+    
+    <!--text, radio, checkbox, select, date, textarea 사용, fieldset, legend, optgroup, color, datalist 선택-->
+</body>
+</html>
